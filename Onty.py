@@ -4,6 +4,14 @@ from splitingnmsresult import ExtractNMS
 import listip
 from datetime import datetime
 import time
+import subprocess
+import os
+
+os.chdir(os.path.dirname(__file__))
+direktoriexe = os.path.join(os.getcwd() + '\nmsall.exe')
+print(direktoriexe)
+
+subprocess.Popen(direktoriexe)
 
 api = 'BOT_TOKEN'
 
